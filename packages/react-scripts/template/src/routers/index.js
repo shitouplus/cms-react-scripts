@@ -1,22 +1,20 @@
-import HelloWorld from '~/pages/HelloWorld'
+import Home from '@/pages/Home'
+import About from '@/pages/About'
+import MailIcon from '@material-ui/icons/Mail'
+import InboxIcon from '@material-ui/icons/MoveToInbox'
 
 const Routers = [
   {
-    name: '1',
-    icon: '',
-    path: '/level-1',
-    component: HelloWorld,
-    children: [
-      {
-        name: '1-1',
-        icon: '',
-        path: '/level-1/level-1-1',
-        component: HelloWorld,
-        children: [
-
-        ]
-      }
-    ]
+    name: 'Home',
+    icon: InboxIcon,
+    path: '/home',
+    component: Home
+  },
+  {
+    name: 'About',
+    icon: MailIcon,
+    path: '/about',
+    component: About
   }
 ]
 

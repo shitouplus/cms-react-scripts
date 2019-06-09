@@ -264,7 +264,7 @@ module.exports = function(
 };
 
 function installDependencies() {
-  const Dependencies = ["mobx", "mobx-react", "react-router", "@material-ui/core", "@material-ui/icons", "axios"];
+  const Dependencies = ["mobx", "mobx-react", "react-router-dom", "@material-ui/core", "@material-ui/icons", "axios"];
 
   try {
     execSync(`npm i -S ${Dependencies.join(' ')}`, { stdio: 'ignore' });
