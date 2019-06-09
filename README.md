@@ -3,19 +3,18 @@
 Create React cms with no build configuration.
 
 - Auto install mobx, mobx-react, react-router, @material-ui/core, @material-ui/icons, axios
-- enable data mock
-- enable @decorator
-- enable alias
+- Enable data mock
+- Enable @decorator
+- Enable alias
   ```
   @ -> /src
   ```
-- Generator cms templates
+- Auto generator cms templates
   ```
   my-app
   ├── README.md
   ├── node_modules
   ├── package.json
-  ├── setupProxy.js
   ├── .gitignore
   ├── public
   │   ├── favicon.ico
@@ -43,6 +42,7 @@ Create React cms with no build configuration.
       ├── index.css
       ├── index.js
       ├── logo.svg
+      ├── setupProxy.js
       └── serviceWorker.js
   ```
 
