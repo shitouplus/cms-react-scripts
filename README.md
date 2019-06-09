@@ -21,17 +21,23 @@ Create React cms with no build configuration.
   │   ├── index.html
   │   └── manifest.json
   └── src
+      ├── assets
+      ├── components
+      │   └── Menus.js
       ├── layouts
       │   └── default
+      │       ├── Main.js
       │       └── index.js
       ├── mock
       │   └── index.js
       ├── models
-      │   └── HelloWorld
+      │   └── Home
       │       └── index.js 
       ├── pages
-      │   └── HelloWorld
-      │       └── index.js   
+      │   ├── About
+      │   │   └── index.js
+      │   └── Home
+      │       └── index.js
       ├── routers
       │   └── index.js
       ├── utils
