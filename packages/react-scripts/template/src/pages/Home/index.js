@@ -4,6 +4,10 @@ import { inject, observer } from 'mobx-react';
 @inject('Home')
 @observer
 class HelloWorld extends React.Component {
+  componentWillMount () {
+    this.props.Home.fetchData()
+  }
+
   render () {
     const { Home } = this.props;
     return (

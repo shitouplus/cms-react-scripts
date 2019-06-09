@@ -1,6 +1,9 @@
-export default [
+module.exports = [
   {
-    url: '',
-    data: []
+    url: '/mock/test',
+    data: {
+      success: true,
+      message: 'this is mock data'
+    }
   }
 ]

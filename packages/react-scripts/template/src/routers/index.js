@@ -5,17 +5,17 @@ import InboxIcon from '@material-ui/icons/MoveToInbox'
 
 const Routers = [
   {
-    name: 'Home',
-    icon: InboxIcon,
-    path: '/home',
-    component: Home
-  },
-  {
     name: 'About',
     icon: MailIcon,
     path: '/about',
     component: About
-  }
+  },
+  {
+    name: 'Home',
+    icon: InboxIcon,
+    path: '/',
+    component: Home
+  },
 ]
 
 export default Routers

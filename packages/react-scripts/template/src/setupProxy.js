@@ -1,4 +1,4 @@
-import mocks from '@/mock/index.js'
+const mocks = require('./mock')
 
 module.exports = function(app) {
   for (let { url, data } of mocks) {
