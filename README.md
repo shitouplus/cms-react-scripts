@@ -4,6 +4,7 @@ Create React cms with no build configuration.
 
 - Auto install mobx, mobx-react, react-router, @material-ui/core, @material-ui/icons, axios
 - enable data mock
+- enable @decorator
 - enable alias
   ```
   @ -> /src
