@@ -199,6 +199,11 @@ module.exports = function(
     verifyTypeScriptSetup();
   }
 
+  if (installDependencies()) {
+    console.log();
+    console.log('Install dependencies');
+  }
+
   if (tryGitInit(appPath)) {
     console.log();
     console.log('Initialized a git repository.');
@@ -257,6 +262,17 @@ module.exports = function(
   console.log();
   console.log('Happy hacking!');
 };
+
+function installDependencies() {
+  const Dependencies = ["mobx", "mobx-react", "react-router", "@material-ui/core", "@material-ui/icons", "axios"];
+
+  try {
+    execSync(`npm i -S ${Dependencies.join(' ')}`, { stdio: 'ignore' });
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
 
 function isReactInstalled(appPackage) {
   const dependencies = appPackage.dependencies || {};

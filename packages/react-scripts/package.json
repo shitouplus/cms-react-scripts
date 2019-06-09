@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
-  "version": "3.0.1",
-  "description": "Configuration and scripts for Create React App.",
+  "name": "cms-react-scripts",
+  "version": "3.0.9",
+  "description": "quickly create cms",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/shitouplus/cms-react-scripts.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
